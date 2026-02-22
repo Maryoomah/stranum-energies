@@ -46,7 +46,7 @@ const Blog = () => {
       } else {
         throw new Error("Subscription failed");
       }
-    } catch (error) {
+    } catch {
       setModalState({
         isOpen: true,
         type: "error",

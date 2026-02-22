@@ -38,7 +38,7 @@ function Home() {
         <Swiper
           modules={[Autoplay, EffectFade, Pagination]}
           effect="fade"
-          pagination={{ clickable: true }}
+          pagination={false}
           loop
           autoplay={{ delay: 6000, disableOnInteraction: false }}
           className="h-full w-full"
@@ -53,7 +53,7 @@ function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-blue-950/40 to-transparent" />
                 
                 <div className="absolute inset-0 flex items-center">
-                  <div className={`${container} w-full`}>
+                  <div className={`${container} w-full pt-24 pb-8`}>
                     <div className="max-w-3xl" data-aos="fade-right">
                       <p className="text-orange-500 font-bold tracking-[0.2em] uppercase text-sm mb-6 drop-shadow-md">
                         {slide.tag}

@@ -39,7 +39,7 @@ const ProjectDetail = () => {
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100" data-aos="fade-up">
-                <h3 className="text-xl font-extrabold text-blue-900 mb-4 text-orange-600">The Challenge</h3>
+                <h3 className="text-xl font-extrabold text-blue-900 mb-4">The Challenge</h3>
                 <p className="text-slate-600 leading-relaxed text-sm">{project.challenge}</p>
               </div>
               <div className="bg-blue-900 p-8 rounded-3xl text-white" data-aos="fade-up" data-aos-delay="100">
