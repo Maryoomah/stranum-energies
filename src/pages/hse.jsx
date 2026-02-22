@@ -99,8 +99,16 @@ export default function HSE() {
         </div>
       </section>
 
-      {/* APPROACH */}
-      <section className="py-16 bg-slate-50"></section>
+      {/* APPROACH INTRO */}
+      <section className="py-16 bg-slate-50 border-y border-slate-100">
+        <div className={container}>
+           <div className="max-w-3xl">
+              <h2 className="text-sm font-bold text-orange-600 uppercase tracking-widest mb-6">Execution</h2>
+              <h3 className="text-3xl md:text-4xl font-black text-blue-950 mb-4">Risk Management Framework</h3>
+              <p className="text-slate-600">A systematic process for identifying and mitigating operational hazards before they impact performance.</p>
+           </div>
+        </div>
+      </section>
 
       {/* COMMITMENT */}
       <section className="py-24 bg-blue-950">
@@ -114,13 +122,14 @@ export default function HSE() {
             </p>
 
             <h2
-              className="mt-4 text-3xl md:text-4xl font-extrabold text-white leading-[1.1]"
+              className="mt-4 text-3xl md:text-4xl font-extrabold text-white leading-[1.1] mb-6"
               data-aos="fade-up"
               data-aos-delay="100"
             >
               A structured HSE approach{" "}
               <span className="text-orange-400">from risk to improvement</span>
             </h2>
+            <p className="text-blue-100/70 mb-12">Our continuous feedback loop ensures that safety standards evolve with every project.</p>
           </div>
 
           {/* Process Steps */}

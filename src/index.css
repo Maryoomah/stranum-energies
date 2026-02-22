@@ -1,9 +1,54 @@
-@import "tailwindcss";
-html,
-body {
-  width: 100%;
-  overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  /* Brand Colors */
+  --color-brand-blue-deep: #0F1E3A;
+  --color-brand-blue-accent: #1e293b;
+  --color-brand-orange: #f97316;
+  --color-brand-orange-hover: #ea580c;
+  
+  /* Typography - Professional Moderation */
+  --font-display: "DM Sans", sans-serif;
+  --font-body: "Manrope", sans-serif;
+  
+  /* Modern Spacing */
+  --spacing-container: 1.5rem;
+  --spacing-section: 4rem; /* Moderated section padding */
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+  }
+
+  body {
+    @apply text-slate-900 bg-white antialiased;
+    font-size: 0.95rem; /* Slightly smaller default body text */
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    @apply tracking-tighter;
+  }
+
+  /* Font Size Moderation */
+  h1 { @apply text-4xl md:text-5xl lg:text-6xl font-black leading-[1.05]; }
+  h2 { @apply text-3xl md:text-4xl lg:text-4xl font-extrabold leading-tight; }
+  h3 { @apply text-2xl md:text-2xl lg:text-3xl font-bold; }
+}
+
+@layer components {
+  .premium-card {
+    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-900/10;
+  }
+  
+  .glass-nav {
+    @apply bg-white/80 backdrop-blur-md border-b border-white/20;
+  }
+}
+
 @keyframes floatY {
   0% {
     transform: translateY(0);
@@ -20,11 +65,28 @@ body {
   animation: floatY 3.5s ease-in-out infinite;
 }
 
+/* Swiper Customization */
 .services-pagination .swiper-pagination-bullet {
-  background: #cbd5e1; /* light gray */
-  opacity: 1;
+  background: var(--text-muted);
+  opacity: 0.3;
+  transition: all 0.3s ease;
 }
 
 .services-pagination .swiper-pagination-bullet-active {
-  background: #f97316; /* orange */
+  background: var(--brand-orange);
+  opacity: 1;
+  width: 1.5rem;
+  border-radius: 4px;
+}
+
+/* Premium Card Hover */
+.premium-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }

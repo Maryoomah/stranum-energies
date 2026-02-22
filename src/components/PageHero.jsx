@@ -25,7 +25,7 @@ export default function PageHero({
       <div className="relative z-10 h-full flex items-center justify-center text-center">
         <div className="">
 
-          <h1 className="mt-2 text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight max-w-3xl">
+          <h1 className="mt-2 text-3xl sm:text-4xl md:text-6xl font-black text-white leading-[1.1] max-w-4xl uppercase drop-shadow-2xl">
             {title}
           </h1>
 

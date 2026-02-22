@@ -1,327 +1,160 @@
+import React from 'react';
+import { Link } from "react-router-dom";
+import SEO from '../components/SEO';
 import PageHero from "../components/PageHero";
+import Section from "../components/Section";
 import Footer from "../components/footer";
 
 function About() {
   const values = [
-    {
-      title: "Operational Discipline",
-      desc: "Structured systems and defined processes drive consistent results.",
-    },
-    {
-      title: "Safety First",
-      desc: "We uphold uncompromising safety standards across all operations.",
-    },
-    {
-      title: "Reliability",
-      desc: "We deliver on commitments and maintain dependable supply chains.",
-    },
-    {
-      title: "Accountability",
-      desc: "Clear ownership, measurable performance, and transparent reporting guide our operations.",
-    },
-    {
-      title: "Excellence",
-      desc: "We pursue continuous improvement in every aspect of our business.",
-    },
-    {
-      title: "Integrity",
-      desc: "We pursue continuous improvement in every aspect of our business.",
-    },
+    { title: "Operational Discipline", desc: "Structured systems and defined processes drive consistent results across the value chain." },
+    { title: "Safety Leadership", desc: "We uphold uncompromising safety standards as a primary operational benchmark." },
+    { title: "Strategic Reliability", desc: "We deliver on commitments and maintain dependable, resilient supply chains." },
+    { title: "Accountability", desc: "Clear ownership and transparent reporting guide every phase of our performance." },
+    { title: "Continuous Excellence", desc: "We pursue procedural improvement in every aspect of our integrated business." },
+    { title: "Corporate Integrity", desc: "Our actions are guided by ethical standards and regulatory alignment." },
   ];
+
   const teamMembers = [
-    {
-      name: "Engr. Daniel Okafor",
-      role: "Chief Executive Officer",
-      image: `${import.meta.env.BASE_URL}images/img.png `,
-    },
-
-    {
-      name: "Aisha Bello",
-      role: "Chief Operations Officer",
-      image: `${import.meta.env.BASE_URL}images/img.png `,
-    },
-
-    {
-      name: "Ibrahim Musa",
-      role: "Head of Exploration",
-      image: `${import.meta.env.BASE_URL}images/img.png `,
-    },
-
-    {
-      name: "Chidinma Nwosu",
-      role: "Engineering Director",
-      image: `${import.meta.env.BASE_URL}images/img.png `,
-    },
-
-    {
-      name: "Samuel Adeyemi",
-      role: "HSE Manager",
-      image: `${import.meta.env.BASE_URL}images/img.png `,
-    },
-
-    {
-      name: "Fatima Abdullahi",
-      role: "Finance Director",
-      image: `${import.meta.env.BASE_URL}images/img.png `,
-    },
-
-    {
-      name: "Tunde Alabi",
-      role: "Field Operations Lead",
-      image: `${import.meta.env.BASE_URL}images/img.png `,
-    },
-    {
-      name: "Muhammed Ali",
-      role: "Corporate Affairs Manager",
-      image: `${import.meta.env.BASE_URL}images/img.png `,
-    },
+    { name: "Engr. Daniel Okafor", role: "Chief Executive Officer", image: "/images/img.png" },
+    { name: "Aisha Bello", role: "Chief Operations Officer", image: "/images/img.png" },
+    { name: "Ibrahim Musa", role: "Head of Exploration", image: "/images/img.png" },
+    { name: "Chidinma Nwosu", role: "Engineering Director", image: "/images/img.png" },
   ];
 
   return (
-    <main className="bg-white">
-      {/* HERO */}
+    <main>
+      <SEO 
+        title="About Our Discipline" 
+        description="Learn about Stranum Energies' commitment to structured energy execution and operational reliability." 
+      />
+
+      {/* 1. HERO SECTION */}
       <PageHero
-        title="ABOUT US"
-        subtitle="Stranum Energy is a Nigeria-based integrated oil and gas company
-            focused on dependable performance, operational discipline, and
-            long-term value creation"
+        title="ABOUT OUR DISCIPLINE"
+        subtitle="Built on the foundation of structured performance and industrial reliability in the oil & gas sector."
         image={`${import.meta.env.BASE_URL}images/Drilling.jpg`}
       />
-      {/* ABOUT BODY */}
-      <section className="bg-white">
-        <div className="max-w-6xl mx-auto px-6 py-12 sm:py-16 grid gap-12 lg:grid-cols-2 items-center">
-          {/* LEFT Divv */}
-          <div data-aos="fade-right" className="max-w-xl">
-            <p className="text-orange-600 font-bold uppercase tracking-widest text-2xl md:text-3xl">
-              About Us
+
+      {/* 2. THE STRANUM STORY */}
+      <Section bg="white">
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div data-aos="fade-right">
+            <h2 className="text-sm font-bold text-orange-600 uppercase tracking-widest mb-6">Our Narrative</h2>
+            <h3 className="text-3xl md:text-4xl font-black text-blue-950 mb-4">Established in Expertise.</h3>
+            <p className="text-slate-500 mb-8">Our foundation is built on decades of industry knowledge and operational rigor.</p>
+            <p className="text-lg text-slate-600 leading-relaxed mb-6">
+              Stranum Energies represents a convergence of deep industrial knowledge and modern operational frameworks. We specialize in the exploration, development, and distribution of energy resources with precision.
             </p>
-
-            <h2 className="mt-4 text-2xl font-extrabold text-blue-900 leading-[1.1]">
-              Built on Discipline.{" "}
-              <span className="text-orange-500">Driven by Reliability.</span>
-            </h2>
-
-            <div className="mt-6 space-y-4 text-gray-700 leading-relaxed">
-              <p data-aos="fade-up" data-aos-delay="100">
-                We specialize in the exploration, development, and distribution
-                of energy resources across the value chain, executing each
-                project with precision, safety leadership, and strict regulatory
-                compliance.
-              </p>
-
-              <p data-aos="fade-up" data-aos-delay="200">
-                Our structured operational systems, experienced workforce, and
-                commitment to excellence enable us to maintain stable
-                production, optimize assets, and deliver consistent supply to
-                partners and clients.
-              </p>
-            </div>
+            <p className="text-lg text-slate-600 leading-relaxed">
+              Our journey is defined not by years, but by the outcomes we deliver and the safety standards we uphold. We serve as a dependable partner in the Nigerian energy landscape.
+            </p>
           </div>
-
-          {/* Right div */}
-          <div
-            className="relative w-full max-w-135 mx-auto"
-            data-aos="fade-left"
-          >
-            {/* Main Image */}
-            <div className="rounded-3xl overflow-hidden shadow-xl border">
-              <img
-                src={`${import.meta.env.BASE_URL}images/about1.jpg`}
-                alt="Stranum Energy Operations"
-                className="w-full h-105 object-cover"
-              />
+          <div className="grid grid-cols-2 gap-4" data-aos="fade-left">
+            <div className="space-y-4">
+              <img src={`${import.meta.env.BASE_URL}images/about1.jpg`} className="rounded-3xl shadow-lg w-full h-80 object-cover" alt="Ops 1" />
+              <div className="bg-orange-500 h-32 rounded-3xl" />
             </div>
-
-            {/* Floating Image */}
-            <div className="absolute -bottom-10 left-6 w-[75%] rounded-3xl overflow-hidden shadow-2xl border bg-white float-y">
-              <img
-                src={`${import.meta.env.BASE_URL}images/about.jpg`}
-                alt="Team at work"
-                className="w-full  object-cover"
-              />
+            <div className="relative">
+              <div className="aspect-4/5 rounded-3xl overflow-hidden shadow-2xl">
+                <img 
+                  src={`${import.meta.env.BASE_URL}images/about.jpg`} 
+                  alt="Our Heritage" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </Section>
 
-      {/* VISION  MISSION  */}
-      <section className="relative overflow-hidden bg-slate-50 mt-20">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(249,115,22,0.15),transparent_50%),radial-gradient(circle_at_80%_30%,rgba(59,130,246,0.12),transparent_50%)]" />
-        <div className="max-w-6xl mx-auto px-6 py-12 sm:py-16 relative">
-          <div className="flex items-center justify-center gap-6 flex-wrap">
-            <div data-aos="fade-up">
-              <h2 className="text-2xl md:text-3xl font-bold uppercase text-orange-500">
-                Vision & Mission
-              </h2>
+      {/* 3. VISION & MISSION CARDS */}
+      <Section bg="soft">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="bg-white p-12 rounded-[3.5rem] shadow-sm border border-slate-100" data-aos="fade-up">
+            <div className="w-12 h-12 bg-orange-100 rounded-2xl mb-8 flex items-center justify-center text-orange-600">
+               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
             </div>
+            <h4 className="text-sm font-bold text-orange-600 uppercase tracking-widest mb-4">Our Vision</h4>
+            <p className="text-2xl font-black text-blue-950 leading-tight">To be the benchmark for strength and performance-driven delivery in regional energy.</p>
           </div>
-
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
-            {/* Vision card */}
-            <div
-              className="group rounded-3xl border bg-white p-8 shadow-sm transition hover:shadow-lg"
-              data-aos="zoom-in"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-wider text-orange-600">
-                    Our Vision
-                  </p>
-                  <h3 className="mt-6 text-2xl font-extrabold text-[#0F1E3A] leading-snug">
-                    Trusted for strength
-                    <span className="text-orange-500"> Known for delivery</span>
-                  </h3>
-                </div>
-
-                <div className="shrink-0 rounded-2xl bg-orange-500/10 p-3 text-orange-600">
-                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none">
-                    <path
-                      d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6-10-6-10-6Z"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    />
-                    <path
-                      d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </div>
-              </div>
-
-              <p className="mt-5 text-gray-700 leading-relaxed">
-                To be a trusted and dependable Nigerian energy company
-                recognized for operational strength, reliability, and consistent
-                delivery.
-              </p>
-
-              <div className="mt-6 h-1.5 w-20 rounded-full bg-linear-to-r from-orange-500 to-orange-300" />
+          <div className="bg-blue-900 p-12 rounded-[3.5rem] shadow-xl text-white" data-aos="fade-up" data-aos-delay="100">
+            <div className="w-12 h-12 bg-white/10 rounded-2xl mb-8 flex items-center justify-center text-orange-400">
+               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
             </div>
-
-            {/* Mission card */}
-            <div
-              className="group rounded-3xl border bg-white p-8 shadow-sm transition hover:shadow-lg"
-              data-aos="zoom-in"
-              data-aos-delay="120"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="text-xs font-bold uppercase tracking-wider text-blue-700">
-                    Our Mission
-                  </p>
-                  <h3 className="mt-6 text-2xl font-extrabold text-[#0F1E3A] leading-snug">
-                    Disciplined operations
-                    <span className="text-blue-700"> Safe performance</span>
-                  </h3>
-                </div>
-
-                <div className="shrink-0 rounded-2xl bg-blue-600/10 p-3 text-blue-700">
-                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none">
-                    <path
-                      d="M12 2 20 6v7c0 5-3.5 9-8 9s-8-4-8-9V6l8-4Z"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    />
-                    <path
-                      d="M9.5 12.5 11 14l3.5-4"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </div>
-              </div>
-
-              <p className="mt-5 text-gray-700 leading-relaxed">
-                To provide efficient and reliable oil and gas solutions through
-                disciplined operations, safety leadership, and strong
-                stakeholder partnerships.
-              </p>
-
-              <div className="mt-6 h-1.5 w-20 rounded-full bg-linear-to-r from-blue-700 to-blue-400" />
-            </div>
+            <h4 className="text-sm font-bold text-orange-400 uppercase tracking-widest mb-4">Our Mission</h4>
+            <p className="text-2xl font-black leading-tight text-white">Delivering efficient energy solutions through disciplined operations and safety leadership.</p>
           </div>
         </div>
-      </section>
+      </Section>
 
-      {/* CORE VALUES  */}
-      <section className="bg-white py-20">
-        <div className="max-w-6xl mx-auto px-6 py-12 sm:py-16">
-          <div className="flex items-center justify-center gap-6 flex-wrap">
-            <div data-aos="fade-up">
-              <h2 className="text-2xl md:text-3xl  font-bold uppercase text-blue-900">
-                Core <span className="text-orange-500">Values</span>
-              </h2>
+      {/* 4. PERFORMANCE VALUES */}
+      <Section bg="white">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+           <h2 className="text-sm font-bold text-orange-600 uppercase tracking-widest mb-6">Our DNA</h2>
+           <h3 className="text-3xl md:text-4xl font-black text-blue-950 mb-4">Performance Pillars</h3>
+           <p className="text-slate-600">The core values that define our technical and operational discipline.</p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+           {values.map((v, i) => (
+             <div key={i} className="p-10 rounded-[2.5rem] bg-slate-50 hover:bg-white hover:shadow-xl transition-all border border-slate-100 group" data-aos="fade-up">
+                <h4 className="text-xl font-black text-blue-950 mb-4 group-hover:text-orange-500 transition-colors uppercase tracking-tight">{v.title}</h4>
+                <p className="text-slate-600 text-sm leading-relaxed">{v.desc}</p>
+             </div>
+           ))}
+        </div>
+      </Section>
+
+      {/* 5. LEADERSHIP TEAM */}
+      <Section bg="dark" className="text-white">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+           <h2 className="text-sm font-bold text-orange-400 uppercase tracking-widest mb-6">Experts</h2>
+           <h3 className="text-3xl md:text-4xl font-black mb-4">Strategic Leadership</h3>
+           <p className="text-blue-100/70">A team of experts dedicated to safety, compliance, and industrial excellence.</p>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+           {teamMembers.map((m, i) => (
+             <div key={i} className="group" data-aos="fade-up" data-aos-delay={i * 100}>
+                <div className="aspect-4/5 rounded-[3rem] overflow-hidden mb-6 border border-white/10 grayscale group-hover:grayscale-0 transition-all duration-700">
+                   <img src={`${import.meta.env.BASE_URL}images/img.png`} alt={m.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                </div>
+                <h4 className="text-xl font-black mb-1">{m.name}</h4>
+                <p className="text-orange-500 font-bold text-xs uppercase tracking-widest">{m.role}</p>
+             </div>
+           ))}
+        </div>
+      </Section>
+
+      {/* 6. STRATEGIC PARTNERS (NEW) */}
+      <Section bg="white">
+         <div className="text-center mb-16">
+            <h2 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4">Working With The Best</h2>
+            <h3 className="text-3xl font-black text-blue-950 mb-4">Strategic Alignment</h3>
+            <p className="text-slate-500">Collaborating with industry leaders to deliver integrated energy outcomes.</p>
+         </div>
+         <div className="flex flex-wrap justify-center items-center gap-16 opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-700">
+            {/* Placeholder for partner logos */}
+            <div className="h-12 w-32 bg-slate-200 rounded-lg flex items-center justify-center font-black text-slate-400">PARTNER 1</div>
+            <div className="h-12 w-32 bg-slate-200 rounded-lg flex items-center justify-center font-black text-slate-400">PARTNER 2</div>
+            <div className="h-12 w-32 bg-slate-200 rounded-lg flex items-center justify-center font-black text-slate-400">PARTNER 3</div>
+            <div className="h-12 w-32 bg-slate-200 rounded-lg flex items-center justify-center font-black text-slate-400">PARTNER 4</div>
+         </div>
+      </Section>
+
+      {/* 7. CTA CAREERS */}
+      <Section bg="soft">
+         <div className="bg-orange-500 rounded-[4rem] p-16 text-center text-white relative overflow-hidden" data-aos="zoom-in">
+            <div className="relative z-10">
+               <h3 className="text-3xl md:text-4xl font-black mb-6">Drive the Future of Energy</h3>
+               <p className="text-white/80 mb-10 max-w-xl mx-auto">We are always looking for disciplined professionals to join our technical and operational teams.</p>
+               <Link to="/careers" className="bg-white text-orange-600 font-black px-12 py-5 rounded-2xl shadow-xl hover:scale-105 transition-all">
+                  Join Our Team
+               </Link>
             </div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+         </div>
+      </Section>
 
-            <div
-              className="hidden md:flex items-center gap-2"
-              data-aos="fade-up"
-              data-aos-delay="120"
-            ></div>
-          </div>
-
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {values.map((v, idx) => (
-              <div
-                key={v.title}
-                className="group relative overflow-hidden rounded-3xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-                data-aos="fade-up"
-                data-aos-delay={idx * 80}
-              >
-                {/* Accent line */}
-                <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-orange-500 via-orange-300 to-blue-600 opacity-80" />
-
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h3 className="text-lg font-bold text-[#0F1E3A]">
-                      {v.title}
-                    </h3>
-                    <p className="mt-6 text-sm text-gray-700 leading-relaxed">
-                      {v.desc}
-                    </p>
-                  </div>
-
-                  <div className="shrink-0 rounded-2xl bg-slate-50 p-3 text-[#0F1E3A] group-hover:text-orange-600 transition">
-                    {v.icon}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      {/* team */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-center text-orange-500">
-            Leadership Team
-          </h2>
-
-          <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            {teamMembers.map((member, index) => (
-              <div
-                key={index}
-                className="group text-center transition-all duration-300 hover:-translate-y-2"
-              >
-                <div className="overflow-hidden rounded-2xl shadow-lg">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-
-                <h3 className="mt-5 text-lg font-semibold text-[#0F1E3A]">
-                  {member.name}
-                </h3>
-
-                <p className="text-sm text-gray-500 mt-1">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
       <Footer />
     </main>
   );
