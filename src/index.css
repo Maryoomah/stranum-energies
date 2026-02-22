@@ -1,0 +1,30 @@
+@import "tailwindcss";
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+@keyframes floatY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float-y {
+  animation: floatY 3.5s ease-in-out infinite;
+}
+
+.services-pagination .swiper-pagination-bullet {
+  background: #cbd5e1; /* light gray */
+  opacity: 1;
+}
+
+.services-pagination .swiper-pagination-bullet-active {
+  background: #f97316; /* orange */
+}
