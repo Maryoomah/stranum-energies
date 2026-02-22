@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { User } from 'lucide-react';
 import SEO from '../components/SEO';
 import PageHero from "../components/PageHero";
 import Section from "../components/Section";
@@ -113,15 +114,15 @@ function About() {
            <p className="text-blue-100/70">A team of experts dedicated to safety, compliance, and industrial excellence.</p>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-           {teamMembers.map((m, i) => (
-             <div key={i} className="group" data-aos="fade-up" data-aos-delay={i * 100}>
-                <div className="aspect-4/5 rounded-[3rem] overflow-hidden mb-6 border border-white/10 grayscale group-hover:grayscale-0 transition-all duration-700">
-                   <img src={`${import.meta.env.BASE_URL}images/img.png`} alt={m.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                </div>
-                <h4 className="text-xl font-black mb-1">{m.name}</h4>
-                <p className="text-orange-500 font-bold text-xs uppercase tracking-widest">{m.role}</p>
-             </div>
-           ))}
+            {teamMembers.map((m, i) => (
+              <div key={i} className="group" data-aos="fade-up" data-aos-delay={i * 100}>
+                 <div className="aspect-4/5 rounded-[3rem] mb-6 border border-white/10 bg-white/5 flex items-center justify-center transition-all duration-700 group-hover:bg-orange-500/10">
+                    <User className="w-24 h-24 text-white/20 group-hover:text-orange-500 transition-colors duration-700" />
+                 </div>
+                 <h4 className="text-xl font-black mb-1 text-white">{m.name}</h4>
+                 <p className="text-orange-500 font-bold text-xs uppercase tracking-widest">{m.role}</p>
+              </div>
+            ))}
         </div>
       </Section>
 
