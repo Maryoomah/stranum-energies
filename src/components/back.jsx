@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
+import { ChevronUp } from "lucide-react";
 
-function 
-BackToTop() {
+function BackToTop() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -12,7 +12,7 @@ BackToTop() {
   }, []);
 
   const goTop = () => {
-    document.getElementById("top")?.scrollIntoView({ behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   if (!show) return null;
@@ -21,9 +21,9 @@ BackToTop() {
     <button
       onClick={goTop}
       aria-label="Back to top"
-      className="fixed bottom-6 right-6 z-50 rounded-full bg-orange-500 text-white text-3xl p-4 shadow-lg hover:bg-amber-600 transition active:scale-95"
+      className="fixed bottom-8 right-8 z-50 rounded-2xl bg-orange-500 text-white p-4 shadow-2xl hover:bg-orange-600 transition-all active:scale-90 group"
     >
-      ↑
+      <ChevronUp size={24} className="group-hover:-translate-y-1 transition-transform" />
     </button>
   );
 }

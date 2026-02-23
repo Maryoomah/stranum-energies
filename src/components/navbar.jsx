@@ -33,7 +33,9 @@ function Navbar() {
   return (
     <nav 
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/90 backdrop-blur-md shadow-md py-3" : "bg-transparent py-5"
+        (isScrolled || isOpen)
+          ? "bg-blue-950 lg:bg-white/90 shadow-xl py-3" 
+          : "bg-transparent py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 sm:px-8">
@@ -50,7 +52,7 @@ function Navbar() {
           {/* DESKTOP MENU */}
           <div className="hidden lg:flex items-center gap-8">
             <ul className={`flex items-center gap-8 font-bold text-sm uppercase tracking-wider transition-colors duration-300 ${
-              isScrolled ? "text-blue-900" : "text-white"
+              isScrolled ? "lg:text-blue-900 text-white" : "text-white"
             }`}>
               {navLinks.map((link) => (
                 <li key={link.path}>
@@ -75,7 +77,7 @@ function Navbar() {
           {/* MOBILE TOGGLE */}
           <button
             className={`lg:hidden relative z-50 p-2 rounded-lg transition-colors ${
-              isScrolled ? "text-blue-900" : "text-white"
+              (isScrolled || isOpen) ? "text-white" : "text-white"
             }`}
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
@@ -93,7 +95,7 @@ function Navbar() {
       <div className={`fixed inset-0 bg-blue-950 z-40 lg:hidden transition-all duration-500 ease-in-out ${
         isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       }`}>
-        <div className="flex flex-col h-full pt-32 px-8 pb-12">
+        <div className="flex flex-col h-full pt-32 px-8 pb-12 bg-blue-950">
           <ul className="flex flex-col gap-6">
             {navLinks.map((link) => (
               <li key={link.path} data-aos="fade-left" data-aos-delay="100">

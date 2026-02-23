@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 
 import Navbar from "./components/navbar";
 import BackToTop from "./components/back";
+import ScrollToTop from "./components/ScrollToTop";
 import LoadingSpinner from "./components/LoadingSpinner";
 
 // Lazy Loaded Pages
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <BackToTop />
       <Suspense fallback={<LoadingSpinner />}>
