@@ -17,10 +17,30 @@ function About() {
   ];
 
   const teamMembers = [
-    { name: "Engr. Daniel Okafor", role: "Chief Executive Officer", image: "/images/img.png" },
-    { name: "Aisha Bello", role: "Chief Operations Officer", image: "/images/img.png" },
-    { name: "Ibrahim Musa", role: "Head of Exploration", image: "/images/img.png" },
-    { name: "Chidinma Nwosu", role: "Engineering Director", image: "/images/img.png" },
+    { 
+      name: "Chris Enuma", 
+      role: "Acting CEO & Executive Director (Technical)", 
+      bio: "Chris holds a B.Eng from the University of Benin and M.Eng in Petroleum Engineering from the University of Lagos. He has over 30 years of diverse surface and subsurface experience in the Oil and Gas industry and has previously occupied various leadership roles in Total Energies before joining Stranum.",
+      image: "/images/img.png" 
+    },
+    { 
+      name: "Gbenga Ojofeitimi", 
+      role: "Director of Strategy & Expansion", 
+      bio: "Gbenga is a seasoned professional with over 35 years’ experience in the Nigerian oil and gas industry. He obtained his mechanical engineering degree from the University of Lagos in 1989. He is a member of NSE and COREN.",
+      image: "/images/img.png" 
+    },
+    { 
+      name: "Chima Osuji", 
+      role: "Director", 
+      bio: "Chima is a seasoned energy professional with over 35 years’ experience. He started his career as an MWD Engineer with Smith International and later as Coiled Tubing Engineer with Halliburton. He is a member of NSE and COREN.",
+      image: "/images/img.png" 
+    },
+  ];
+
+  const managementStaff = [
+    { name: "Chris Enuma", role: "Acting CEO" },
+    { name: "GM Technical", role: "Management" },
+    { name: "CFO", role: "Management" },
   ];
 
   return (
@@ -43,12 +63,12 @@ function About() {
           <div data-aos="fade-right">
             <h2 className="text-sm font-bold text-orange-600 uppercase tracking-widest mb-6">Our Narrative</h2>
             <h3 className="text-3xl md:text-4xl font-black text-blue-950 mb-4">Established in Expertise.</h3>
-            <p className="text-slate-500 mb-8">Our foundation is built on decades of industry knowledge and operational rigor.</p>
+            <p className="text-slate-500 mb-8">Headquartered in Port Harcourt, in the heart of the Niger Delta.</p>
             <p className="text-lg text-slate-600 leading-relaxed mb-6">
-              Stranum Energies represents a convergence of deep industrial knowledge and modern operational frameworks. We specialize in the exploration, development, and distribution of energy resources with precision.
+              Stranum Energies is an indigenous oil and gas producing company poised to acquire and operate assets in the Niger Delta region and beyond. We operate with a mix of innovation, talent, and technologies which positions us as a future energy power-house.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
-              Our journey is defined not by years, but by the outcomes we deliver and the safety standards we uphold. We serve as a dependable partner in the Nigerian energy landscape.
+              Although relatively young, the Company has assembled a world-class team of seasoned professionals with expertise spanning an average experience of 20 years cutting across critical operations in the Niger Delta region.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4" data-aos="fade-left">
@@ -109,20 +129,58 @@ function About() {
       {/* 5. LEADERSHIP TEAM */}
       <Section bg="dark" className="text-white">
         <div className="text-center max-w-3xl mx-auto mb-20">
-           <h2 className="text-sm font-bold text-orange-400 uppercase tracking-widest mb-6">Experts</h2>
-           <h3 className="text-3xl md:text-4xl font-black mb-4">Strategic Leadership</h3>
+           <h2 className="text-sm font-bold text-orange-400 uppercase tracking-widest mb-6">Board of Directors</h2>
+           <h3 className="text-3xl md:text-4xl font-black mb-4">Our Leadership</h3>
            <p className="text-blue-100/70">A team of experts dedicated to safety, compliance, and industrial excellence.</p>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-12">
             {teamMembers.map((m, i) => (
-              <div key={i} className="group" data-aos="fade-up" data-aos-delay={i * 100}>
-                 <div className="aspect-4/5 rounded-[3rem] mb-6 border border-white/10 bg-white/5 flex items-center justify-center transition-all duration-700 group-hover:bg-orange-500/10">
-                    <User className="w-24 h-24 text-white/20 group-hover:text-orange-500 transition-colors duration-700" />
+              <div key={i} className="group bg-white/5 p-8 rounded-[3rem] border border-white/10 hover:bg-white/10 transition-all" data-aos="fade-up" data-aos-delay={i * 100}>
+                 <div className="aspect-square w-24 h-24 rounded-2xl mb-6 border border-white/10 bg-white/5 flex items-center justify-center transition-all duration-700 group-hover:bg-orange-500">
+                    <User className="w-12 h-12 text-white/20 group-hover:text-white transition-colors duration-700" />
                  </div>
-                 <h4 className="text-xl font-black mb-1 text-white">{m.name}</h4>
-                 <p className="text-orange-500 font-bold text-xs uppercase tracking-widest">{m.role}</p>
+                 <h4 className="text-2xl font-black mb-1 text-white">{m.name}</h4>
+                 <p className="text-orange-500 font-bold text-xs uppercase tracking-widest mb-4">{m.role}</p>
+                 <p className="text-blue-100/60 text-sm leading-relaxed">{m.bio}</p>
               </div>
             ))}
+        </div>
+
+        <div className="mt-24">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl font-black mb-4">Management Staff</h3>
+          </div>
+          <div className="flex flex-wrap justify-center gap-8">
+            {managementStaff.map((s, i) => (
+              <div key={i} className="bg-white/5 px-10 py-6 rounded-2xl border border-white/10 text-center">
+                <h4 className="text-lg font-black text-white">{s.name}</h4>
+                <p className="text-orange-500 text-xs font-bold uppercase tracking-widest">{s.role}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      {/* 6. OUR STRATEGY (NEW) */}
+      <Section bg="soft">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-sm font-bold text-orange-600 uppercase tracking-widest mb-6">Execution Path</h2>
+            <h3 className="text-3xl md:text-4xl font-black text-blue-950 mb-4">Our Strategy</h3>
+          </div>
+          <div className="space-y-8 bg-white p-12 md:p-20 rounded-[4rem] shadow-sm border border-slate-100">
+            <p className="text-xl text-slate-600 leading-relaxed font-medium">
+              Our growth strategy is based on a long-term perspective for developing our business with a special focus on operating in accordance with industry best practices.
+            </p>
+            <p className="text-xl text-slate-600 leading-relaxed font-medium">
+              Our structured operational systems, experienced workforce, and commitment to excellence enable us to maintain stable production, optimize assets, and deliver consistent supply to our partners and clients.
+            </p>
+            <div className="pt-8 border-t border-slate-100">
+              <p className="text-2xl font-black text-blue-950 italic">
+                "Stranum: World-Class Hydrocarbon extraction with indigenous flavour. The future is here."
+              </p>
+            </div>
+          </div>
         </div>
       </Section>
 

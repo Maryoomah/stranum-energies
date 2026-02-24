@@ -38,7 +38,7 @@ export default function Contact() {
       } else {
         throw new Error("Form submission failed");
       }
-    } catch (error) {
+    } catch {
       setModalState({
         isOpen: true,
         type: "error",
@@ -65,7 +65,7 @@ export default function Contact() {
           <div data-aos="fade-right">
             <p className="text-orange-600 font-bold text-sm uppercase tracking-widest mb-4">Connect With Us</p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-8 leading-tight">
-              Operational Hub in <span className="text-orange-500">Lagos</span>
+              Operational Hub in <span className="text-orange-500">Port Harcourt</span>
             </h2>
 
             <div className="space-y-6 mb-12">
@@ -75,7 +75,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-blue-900 text-lg mb-1">Office Location</h4>
-                  <p className="text-slate-600">Lagos, Nigeria</p>
+                  <p className="text-slate-600">Loense Base, Okuru-Ama, trans Amadi, port harcourt, rivers state.</p>
                 </div>
               </div>
 
@@ -102,8 +102,8 @@ export default function Contact() {
 
             <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100 h-80">
               <iframe
-                title="Stranum Energies Lagos Location"
-                src="https://www.google.com/maps?q=Lagos,Nigeria&output=embed"
+                title="Stranum Energies Port Harcourt Location"
+                src="https://www.google.com/maps?q=Loense+Base,+Okuru-Ama,+Trans+Amadi,+Port+Harcourt,+Rivers+State&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

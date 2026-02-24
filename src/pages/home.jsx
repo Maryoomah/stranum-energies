@@ -90,7 +90,7 @@ function Home() {
               Reliable Energy. <span className="text-orange-500">Structured Excellence.</span>
             </h3>
             <p className="text-lg text-white/70 leading-relaxed mb-10">
-              Stranum Energies is a performance-driven company delivering reliable upstream technical participation and strong downstream execution across the integrated energy value chain.
+              Stranum: World-Class Hydrocarbon extraction with indigenous flavour. The future is here.
             </p>
             <Link to="/about" className="inline-flex items-center text-orange-400 font-black text-lg group">
               Discover Our Story 

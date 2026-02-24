@@ -163,9 +163,37 @@ export default function HSE() {
           </div>
         </div>
       </section>
+      {/* COMMUNITY & ENVIRONMENT (NEW) */}
+      <section className="py-24 bg-soft border-t border-slate-100">
+        <div className={container}>
+          <div className="grid lg:grid-cols-2 gap-20 items-center">
+            <div data-aos="fade-right">
+              <h2 className="text-sm font-bold text-orange-600 uppercase tracking-widest mb-6">Social Responsibility</h2>
+              <h3 className="text-3xl md:text-4xl font-black text-blue-950 mb-8 leading-tight">Focusing on Community & Environment</h3>
+              <p className="text-xl text-slate-600 leading-relaxed mb-6 font-medium">
+                Stranum is a company that is closely knitted and with a very visible presence in the communities where we operate.
+              </p>
+              <p className="text-lg text-slate-600 leading-relaxed mb-10">
+                We are committed to sustaining a green environment which is key to ensure the health and safety of our people. Our operational footprint is managed with deep respect for local ecosystems and stakeholders.
+              </p>
+              <NavLink to="/contact" className="inline-flex items-center text-orange-600 font-bold group">
+                Inquire About Community Activities
+                <span className="ml-3 w-8 h-1 bg-orange-500 rounded-full transition-all group-hover:w-16" />
+              </NavLink>
+            </div>
+            <div className="relative" data-aos="fade-left">
+              <img src={`${import.meta.env.BASE_URL}images/about.jpg`} className="rounded-[4rem] shadow-2xl h-[450px] w-full object-cover" alt="Community" />
+              <div className="absolute -bottom-8 -right-8 bg-blue-900 p-8 rounded-[3rem] shadow-2xl">
+                 <p className="text-white font-black text-xl">Sustaining a<br/>Green<br/>Environment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-white">
         <div className={container}>
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 leading-[1.1]">
               Operational responsibility is embedded in every engagement.
             </h2>
