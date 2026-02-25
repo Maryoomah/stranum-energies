@@ -184,7 +184,7 @@ function About() {
         </div>
       </Section>
 
-      {/* 6. STRATEGIC PARTNERS (NEW) */}
+      {/* 6. STRATEGIC PARTNERS (NEW)
       <Section bg="white">
          <div className="text-center mb-16">
             <h2 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4">Working With The Best</h2>
@@ -192,13 +192,14 @@ function About() {
             <p className="text-slate-500">Collaborating with industry leaders to deliver integrated energy outcomes.</p>
          </div>
          <div className="flex flex-wrap justify-center items-center gap-16 opacity-40 hover:opacity-100 transition-opacity grayscale hover:grayscale-0 duration-700">
-            {/* Placeholder for partner logos */}
+            // Placeholder for partner logos
             <div className="h-12 w-32 bg-slate-200 rounded-lg flex items-center justify-center font-black text-slate-400">PARTNER 1</div>
             <div className="h-12 w-32 bg-slate-200 rounded-lg flex items-center justify-center font-black text-slate-400">PARTNER 2</div>
             <div className="h-12 w-32 bg-slate-200 rounded-lg flex items-center justify-center font-black text-slate-400">PARTNER 3</div>
             <div className="h-12 w-32 bg-slate-200 rounded-lg flex items-center justify-center font-black text-slate-400">PARTNER 4</div>
          </div>
       </Section>
+      */}
 
       {/* 7. CTA CAREERS */}
       <Section bg="soft">
