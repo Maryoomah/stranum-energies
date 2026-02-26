@@ -13,7 +13,7 @@ export const projects = [
     solution:
       'Integrated automated metering and digital tracking systems across the terminal network.',
     impact:
-      '35% increase in daily loading capacity and real-time inventory visibility.',
+      'Significant increase in daily loading capacity and real-time inventory visibility.',
   },
   {
     id: 'field-service-coordination-delta',
@@ -45,7 +45,7 @@ export const projects = [
     solution:
       'Developed a proprietary route optimization and fleet monitoring framework.',
     impact:
-      'Improved delivery reliability to 99% with a significant reduction in transit risks.',
+      'Improved delivery reliability with a significant reduction in transit risks.',
   },
   {
     id: 'asset-integrity-program',
@@ -76,8 +76,7 @@ export const projects = [
       'Energy costs for terminal operations were rising, and carbon footprint reduction was prioritized.',
     solution:
       'Hybrid power system design integrating existing grids with solar capacity.',
-    impact:
-      'Projected 40% reduction in operational energy costs once implemented.',
+    impact: 'Projected reduction in operational energy costs once implemented.',
   },
   {
     id: 'safety-standards-elevation',
@@ -92,7 +91,6 @@ export const projects = [
       'Need for a unified safety culture across diverse operational environments.',
     solution:
       'Comprehensive training, updated SOPs, and field-first reporting digital tools.',
-    impact:
-      'Achieved over 1,000,000 Man-Hours without a Lost Time Injury (LTI).',
+    impact: 'Achieved extensive Man-Hours without a Lost Time Injury (LTI).',
   },
 ];

@@ -94,8 +94,8 @@ export default function Careers() {
               />
             </div>
             <div className="absolute -bottom-8 -left-8 bg-blue-900 p-8 rounded-3xl shadow-xl hidden md:block">
-              <p className="text-orange-400 font-bold text-4xl mb-2">100%</p>
-              <p className="text-white text-sm font-medium">Compliance with Safety Standards</p>
+              <p className="text-orange-400 font-bold text-4xl mb-2">Safety</p>
+              <p className="text-white text-sm font-medium">Uptime and Reliability</p>
             </div>
           </div>
         </div>

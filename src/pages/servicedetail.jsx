@@ -166,7 +166,7 @@ export default function ServiceDetail() {
             <div>
               <h2 className="text-3xl font-extrabold mb-6">Uncompromising Standards</h2>
               <p className="text-blue-100 leading-relaxed mb-8">
-                In the delivery of {service.title.toLowerCase()}, we adhere to international ISO standards and local regulatory requirements, ensuring that every operation is safe and compliant.
+                In the delivery of {service.title.toLowerCase()}, we adhere to international safety and compliance standards and local regulatory requirements, ensuring that every operation is safe and compliant.
               </p>
               <div className="flex flex-wrap gap-6">
                 <div className="flex items-center gap-3">

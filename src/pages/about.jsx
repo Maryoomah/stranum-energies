@@ -20,7 +20,7 @@ function About() {
     { 
       name: "Chris Enuma", 
       role: "Acting CEO & Executive Director (Technical)", 
-      bio: "Chris holds a B.Eng from the University of Benin and M.Eng in Petroleum Engineering from the University of Lagos. He has over 30 years of diverse surface and subsurface experience in the Oil and Gas industry and has previously occupied various leadership roles in Total Energies before joining Stranum.",
+      bio: "Chris holds a B.Eng from the University of Benin and M.Eng in Petroleum Engineering from the University of Lagos. He has extensive surface and subsurface experience in the Oil and Gas industry and has previously occupied various leadership roles in Total Energies before joining Stranum.",
       image: "/images/img.png" 
     },
     { 
@@ -68,7 +68,7 @@ function About() {
               Stranum Energies is an indigenous oil and gas producing company poised to acquire and operate assets in the Niger Delta region and beyond. We operate with a mix of innovation, talent, and technologies which positions us as a future energy power-house.
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
-              Although relatively young, the Company has assembled a world-class team of seasoned professionals with expertise spanning an average experience of 20 years cutting across critical operations in the Niger Delta region.
+              Although relatively young, the Company has assembled a world-class team of seasoned professionals with expertise spanning safety and technical discipline across critical operations in the Niger Delta region.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4" data-aos="fade-left">

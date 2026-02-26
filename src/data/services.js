@@ -17,7 +17,7 @@ export const services = [
   {
     title: 'Production',
     slug: 'production',
-    image: `${import.meta.env.BASE_URL}images/drilling.jpg`,
+    image: `${import.meta.env.BASE_URL}images/Drilling.jpg`,
     tagline:
       'Poised to commence production campaigns upon acquisition of assets.',
     bullets: [
@@ -43,21 +43,6 @@ export const services = [
     ],
     paragraph:
       'Our technical teams ensure efficient field operations, minimal downtime, and sustained asset performance.',
-  },
-  {
-    title: 'Logistics & Distribution',
-    slug: 'logistics-distribution',
-    image: `${import.meta.env.BASE_URL}images/logistics.jpg`,
-    tagline:
-      'Structured logistics for secure, timely petroleum product delivery.',
-    bullets: [
-      'Petroleum product transportation',
-      'Bulk storage services',
-      'Supply chain coordination',
-      'Fuel distribution networks',
-    ],
-    paragraph:
-      'We maintain structured logistics systems that guarantee timely and secure product delivery.',
   },
   {
     title: 'Asset & Infrastructure Management',

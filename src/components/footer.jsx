@@ -37,7 +37,7 @@ function Footer() {
       } else {
         throw new Error("Subscription failed");
       }
-    } catch (error) {
+    } catch {
       setModalState({
         isOpen: true,
         type: "error",
@@ -163,7 +163,7 @@ function Footer() {
 
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 relative">
           <p className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">
-            © {new Date().getFullYear()} Stranum Energies Limited. RC: 1234567.
+            © {new Date().getFullYear()} Stranum Energies Limited.
           </p>
           <div className="flex gap-8 text-[10px] text-slate-500 uppercase tracking-widest font-bold">
             <Link to="/privacy" className="hover:text-white transition-colors">Privacy</Link>

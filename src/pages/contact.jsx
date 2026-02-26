@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Mail, Phone, MapPin, Send, MessageSquare } from "lucide-react";
+import { Mail, MapPin, Send, MessageSquare } from "lucide-react";
 import PageHero from "../components/PageHero";
 import Footer from "../components/footer";
 import Section from "../components/Section";
@@ -89,15 +89,7 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="flex gap-4">
-                <div className="w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center shrink-0 text-slate-400">
-                  <Phone size={24} />
-                </div>
-                <div>
-                  <h4 className="font-bold text-blue-900 text-lg mb-1">Call Us</h4>
-                  <p className="text-slate-600">+234 000 000 000</p>
-                </div>
-              </div>
+
             </div>
 
             <div className="rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100 h-80">
