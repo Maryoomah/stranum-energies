@@ -136,8 +136,12 @@ function About() {
         <div className="grid md:grid-cols-3 gap-12">
             {teamMembers.map((m, i) => (
               <div key={i} className="group bg-white/5 p-8 rounded-[3rem] border border-white/10 hover:bg-white/10 transition-all" data-aos="fade-up" data-aos-delay={i * 100}>
-                 <div className="aspect-square w-24 h-24 rounded-2xl mb-6 border border-white/10 bg-white/5 flex items-center justify-center transition-all duration-700 group-hover:bg-orange-500">
-                    <User className="w-12 h-12 text-white/20 group-hover:text-white transition-colors duration-700" />
+                 <div className="aspect-square w-24 h-24 rounded-2xl mb-6 overflow-hidden border border-white/10 bg-white/5 flex items-center justify-center transition-all duration-700 group-hover:bg-orange-500">
+                    {m.image ? (
+                      <img src={m.image} alt={m.name} className="w-full h-full object-cover" />
+                    ) : (
+                      <User className="w-12 h-12 text-white/20 group-hover:text-white transition-colors duration-700" />
+                    )}
                  </div>
                  <h4 className="text-2xl font-black mb-1 text-white">{m.name}</h4>
                  <p className="text-orange-500 font-bold text-xs uppercase tracking-widest mb-4">{m.role}</p>

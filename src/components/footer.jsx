@@ -68,7 +68,7 @@ function Footer() {
           <div className="space-y-6">
             <Link to="/">
               <img
-                src={`${import.meta.env.BASE_URL}images/logo.png`}
+                src="/images/img.png"
                 alt="Stranum Energies"
                 className="w-32"
               />

@@ -43,7 +43,7 @@ function Navbar() {
           {/* LOGO */}
           <Link to="/" onClick={closeMenu} className="relative z-50">
             <img
-              src={`${import.meta.env.BASE_URL}images/logo.png`}
+              src="/images/logo.png"
               className={`transition-all duration-300 ${isScrolled ? "w-24" : "w-32"}`}
               alt="Stranum Energies Logo"
             />
