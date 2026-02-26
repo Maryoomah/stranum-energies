@@ -4,7 +4,7 @@ const SEO = ({ title, description, keywords, image }) => {
   const siteTitle = "Stranum Energies";
   const fullTitle = `${title} | ${siteTitle}`;
   const defaultDesc = "Stranum Energies is a performance-driven oil & gas company delivering reliable upstream participation and strong downstream execution.";
-  const siteUrl = "https://maryoomah.github.io/stranum-energies";
+  const siteUrl = "https://stranumenergies.com";
 
   return (
     <Helmet>
