@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Static Pages -->
+  <url><loc>https://stranumenergies.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://stranumenergies.com/about</loc><priority>0.8</priority></url>
+  <url><loc>https://stranumenergies.com/operations</loc><priority>0.8</priority></url>
+  <url><loc>https://stranumenergies.com/projects</loc><priority>0.8</priority></url>
+  <url><loc>https://stranumenergies.com/blog</loc><priority>0.8</priority></url>
+  <url><loc>https://stranumenergies.com/careers</loc><priority>0.7</priority></url>
+  <url><loc>https://stranumenergies.com/contact</loc><priority>0.7</priority></url>
+  <url><loc>https://stranumenergies.com/hse</loc><priority>0.7</priority></url>
+
+  <!-- Services -->
+  <url><loc>https://stranumenergies.com/services/exploration</loc><priority>0.9</priority></url>
+  <url><loc>https://stranumenergies.com/services/production</loc><priority>0.9</priority></url>
+  <url><loc>https://stranumenergies.com/services/engineering-field-services</loc><priority>0.9</priority></url>
+  <url><loc>https://stranumenergies.com/services/asset-infrastructure-management</loc><priority>0.9</priority></url>
+
+  <!-- Projects -->
+  <url><loc>https://stranumenergies.com/projects/lagos-terminal-optimization</loc><priority>0.6</priority></url>
+  <url><loc>https://stranumenergies.com/projects/field-service-coordination-delta</loc><priority>0.6</priority></url>
+  <url><loc>https://stranumenergies.com/projects/logistics-network-alignment</loc><priority>0.6</priority></url>
+  <url><loc>https://stranumenergies.com/projects/asset-integrity-program</loc><priority>0.6</priority></url>
+  <url><loc>https://stranumenergies.com/projects/renewable-integration-study</loc><priority>0.6</priority></url>
+  <url><loc>https://stranumenergies.com/projects/safety-standards-elevation</loc><priority>0.6</priority></url>
+
+  <!-- Blog Posts -->
+  <url><loc>https://stranumenergies.com/blog/navigating-energy-transition-nigeria</loc><priority>0.5</priority></url>
+  <url><loc>https://stranumenergies.com/blog/safety-excellence-in-downstream-operations</loc><priority>0.5</priority></url>
+  <url><loc>https://stranumenergies.com/blog/optimizing-supply-chain-reliability</loc><priority>0.5</priority></url>
+  <url><loc>https://stranumenergies.com/blog/future-of-upstream-technical-services</loc><priority>0.5</priority></url>
+  <url><loc>https://stranumenergies.com/blog/building-energy-infrastructure-resilience</loc><priority>0.5</priority></url>
+  <url><loc>https://stranumenergies.com/blog/role-of-digital-transformation</loc><priority>0.5</priority></url>
+</urlset>
